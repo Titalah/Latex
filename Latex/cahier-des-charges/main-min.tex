@@ -1,0 +1,80 @@
+\documentclass[14pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[pdftex]{graphicx}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{eurosym}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\makeatletter
+\@ifpackageloaded{babel}%
+        {\newcommand{\nospace}[1]{{\NoAutoSpaceBeforeFDP{}#1}}}%  % Enlever l'espace avant ":"
+        {\newcommand{\nospace}[1]{#1}}
+\makeatother
+
+\newcommand{\hsp}{\hspace{20pt}}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\renewcommand{\headrulewidth}{1pt}
+\fancyhead[R]{\leftmark}
+
+\renewcommand{\footrulewidth}{1pt}
+\fancyfoot[L]{Cahier des charges}
+\fancyfoot[C]{ }
+\fancyfoot[R]{Page \thepage}
+
+\setlength{\headheight}{20pt}
+
+\title{The Fallen One}
+
+\begin{document}
+
+\begin{titlepage}
+  \begin{sffamily}
+  \begin{center}
+
+    \textsc{\LARGE Dark Waffle}\\[2cm]
+
+    \textsc{\Large Cahier des charges}\\[1.5cm]
+
+    % Title
+    \HRule \\[0.4cm]
+    { \huge \rmfamily \scshape {The Fallen One}\\[0.4cm] }
+
+    \HRule \\[2cm]
+
+    % Author and supervisor
+    \begin{minipage}{0.6\textwidth}
+      \begin{flushleft} \large
+      \emph{Les développeurs :}\\
+		ROSENKRANZ Hugo\\
+		HASSELMANN-HEBERT Romain\\
+        MINARY Théo\\
+		MATEOS Guillaume\\
+      \end{flushleft}
+    \end{minipage}
+    \begin{minipage}{0.3\textwidth}
+      \begin{flushright} \large
+        \emph{Site web :}\\
+        {\fontfamily{lmtt}\selectfont \nospace{http://thefallen.one}}
+      \end{flushright}
+    \end{minipage}
+    \vspace{2cm}
+	\begin{center}
+    \includegraphics[height=200pt]{logo_jeu.png}
+    \end{center}
+    \vfill
+    
+    {\large Janvier 2017}
+
+  \end{center}
+  \end{sffamily}
+\end{titlepage}
+
+
+\end{document}
